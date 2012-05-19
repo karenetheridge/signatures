@@ -241,6 +241,16 @@ handle_proto (pTHX_ OP *op, void *user_data) {
 	return ret;
 }
 
+#if PERL_BCDVERSION >= 0x5013006
+STATIC void
+block_start (pTHX_ int full) {
+	PERL_UNUSED_VAR (full);
+
+	if (SvLEN (PL_linestr) < 16384)
+		lex_grow_linestr (16384);
+}
+#endif
+
 STATIC OP *
 before_eval (pTHX_ OP *op, void *user_data) {
 	dSP;
@@ -293,12 +303,19 @@ setup (class, f_class)
 		char *f_class
 	PREINIT:
 		userdata_t *ud;
+#if PERL_BCDVERSION >= 0x5013006
+		static BHK bhk;
+#endif
 	INIT:
 		Newx (ud, 1, userdata_t);
 		ud->class = newSVsv (class);
 		ud->f_class = f_class;
 	CODE:
 		ud->parser_id = hook_parser_setup ();
+#if PERL_BCDVERSION >= 0x5013006
+		BhkENTRY_set (&bhk, bhk_start, block_start);
+		Perl_blockhook_register (aTHX_ &bhk);
+#endif
 		ud->eval_hook = hook_op_check (OP_ENTEREVAL, handle_eval, ud);
 		RETVAL = (UV)hook_op_check (OP_CONST, handle_proto, ud);
 	OUTPUT:
