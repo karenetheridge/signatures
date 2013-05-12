@@ -31,7 +31,7 @@ makemaker_args($pkg->get_makefile_vars);
 
 extra_tests();
 
-repository 'git://github.com/rafl/signatures.git';
+auto_set_repository;
 bugtracker 'http://rt.cpan.org/Public/Dist/Display.html?Name=signatures';
 
 WriteAll;
