@@ -170,6 +170,11 @@ handle_proto (pTHX_ OP *op, void *user_data) {
 			continue;
 		}
 
+		if (isSPACE (tmp2[0])) {
+			tmp2++;
+			continue;
+		}
+
 		if (*tmp2 != *s) {
 			return op;
 		}
