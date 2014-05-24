@@ -1,3 +1,8 @@
+Revision history for signatures
+
+0.08
+  * Patch for perl > 5.19.2 by Peter Martini (RT#95181)
+
 0.07  Sat, 19 May 2012 14:46:23 +0400
   * Patch for perl > 5.13.7 by Colin Watson
     See https://rt.cpan.org/Public/Bug/Display.html?id=66997
