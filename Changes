@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.08      2014-05-24 05:07:22Z
   - Patch for perl > 5.19.2 by Peter Martini (RT#95181)
 
 0.07      2012-05-19 10:46:23Z
