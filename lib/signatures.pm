@@ -1,17 +1,20 @@
 use strict;
 use warnings;
-
 package signatures;
+# ABSTRACT: Subroutine signatures with no source filter
 
 use XSLoader;
-use B::Hooks::Parser;
-use B::Hooks::OP::Check;
+use B::Hooks::Parser 0.07;
+use B::Hooks::OP::Check 0.17;
 use B::Hooks::OP::PPAddr;
-use B::Hooks::EndOfScope;
+use B::Hooks::EndOfScope 0.08;
 
-our $VERSION = '0.07';
-
-XSLoader::load(__PACKAGE__, $VERSION);
+XSLoader::load(
+    __PACKAGE__,
+    exists $signatures::{VERSION}
+    ? ${ $signatures::{VERSION} }
+    : (),
+);
 
 {
     my %pkgs;
@@ -92,10 +95,6 @@ sub inject {
 
 __END__
 
-=head1 NAME
-
-signatures - subroutine signatures with no source filter
-
 =head1 SYNOPSIS
 
     use signatures;
@@ -161,6 +160,8 @@ is parsing and extracted C<$prototype>.
 The default implementation calls C<proto_unwrap> with the prototype and passes
 the returned value and the offset to C<inject>.
 
+=for Pod::Coverage setup setup_for teardown teardown_for
+
 =head1 BUGS
 
 =over 4
@@ -192,21 +193,11 @@ L<Perl6::Subs>
 
 L<Perl6::Parameters>
 
-=head1 AUTHOR
-
-Florian Ragwitz E<lt>rafl@debian.orgE<gt>
-
 =head1 THANKS
+
+=for stopwords Moritz Lenz Steffen Schwigon
 
 Moritz Lenz and Steffen Schwigon for documentation review and
 improvement.
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (c) 2008  Florian Ragwitz
-
-This module is free software.
-
-You may distribute it under the same license as Perl itself.
 
 =cut
