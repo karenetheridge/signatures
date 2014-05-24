@@ -195,6 +195,8 @@ L<Perl6::Parameters>
 
 =head1 THANKS
 
+=for stopwords Moritz Lenz Steffen Schwigon
+
 Moritz Lenz and Steffen Schwigon for documentation review and
 improvement.
 
