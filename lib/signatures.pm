@@ -160,6 +160,8 @@ is parsing and extracted C<$prototype>.
 The default implementation calls C<proto_unwrap> with the prototype and passes
 the returned value and the offset to C<inject>.
 
+=for Pod::Coverage setup setup_for teardown teardown_for
+
 =head1 BUGS
 
 =over 4
