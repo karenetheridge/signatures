@@ -4,7 +4,7 @@ signatures - Subroutine signatures with no source filter
 
 # VERSION
 
-version 0.08
+version 0.09
 
 # SYNOPSIS
 

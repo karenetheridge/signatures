@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.09      2014-05-25 16:17:38Z
   - bump required version of B::Hooks::Parser for mswin32
 
 0.08      2014-05-24 05:07:22Z
