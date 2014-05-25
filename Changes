@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - bump required version of B::Hooks::Parser for mswin32
 
 0.08      2014-05-24 05:07:22Z
   - Patch for perl > 5.19.2 by Peter Martini (RT#95181)

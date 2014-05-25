@@ -4,7 +4,7 @@ package signatures;
 # ABSTRACT: Subroutine signatures with no source filter
 
 use XSLoader;
-use B::Hooks::Parser 0.07;
+use B::Hooks::Parser 0.12;
 use B::Hooks::OP::Check 0.17;
 use B::Hooks::OP::PPAddr;
 use B::Hooks::EndOfScope 0.08;

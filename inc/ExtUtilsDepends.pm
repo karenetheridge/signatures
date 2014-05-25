@@ -24,7 +24,7 @@ sub register_prereqs {
         # minimum version that depends on ExtUtils::Depends 0.302
         'B::Hooks::OP::PPAddr' => '0.03',
         # minimum version that depends on ExtUtils::Depends 0.302
-        'B::Hooks::Parser' => '0.07',
+        'B::Hooks::Parser' => '0.12',
     # this is a workaround for a bug in [MakeMaker], where configure requires
     # prereqs are not added to the fallback hash
     ) foreach qw(configure build);
