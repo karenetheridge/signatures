@@ -12,8 +12,8 @@ use B::Hooks::EndOfScope 0.08;
 XSLoader::load(
     __PACKAGE__,
     exists $signatures::{VERSION}
-    ? ${ $signatures::{VERSION} }
-    : (),
+        ? ${ $signatures::{VERSION} }
+        : (),
 );
 
 {
