@@ -1,5 +1,6 @@
 use strict;
 use warnings;
+use lib 'inc';
 use ExtUtils::MakeMaker::Dist::Zilla::Develop;
 
 use ExtUtils::Depends 0.302;
