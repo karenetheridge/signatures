@@ -247,6 +247,8 @@ handle_proto (pTHX_ OP *op, void *user_data) {
 	return ret;
 }
 
+/* block_start conflicts with the perl API function exposed in 5.21.6.  */
+#undef block_start
 #if PERL_BCDVERSION >= 0x5013006
 STATIC void
 block_start (pTHX_ int full) {
