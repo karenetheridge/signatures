@@ -3,6 +3,8 @@ use warnings;
 package signatures;
 # ABSTRACT: Subroutine signatures with no source filter
 
+our $VERSION = '0.12';
+
 use XSLoader;
 use B::Hooks::Parser 0.12;
 use B::Hooks::OP::Check 0.17;
@@ -11,9 +13,7 @@ use B::Hooks::EndOfScope 0.08 ();
 
 XSLoader::load(
     __PACKAGE__,
-    exists $signatures::{VERSION}
-        ? ${ $signatures::{VERSION} }
-        : (),
+    $VERSION,
 );
 
 {

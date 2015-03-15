@@ -15,6 +15,7 @@ $pkg->add_pm('lib/signatures.pm' => '$(INST_LIB)/signatures.pm');
 
 WriteMakefile(
     NAME => 'signatures',
+    VERSION_FROM => 'lib/signatures.pm',
     INSTALLMAN1DIR => 'none',
     INSTALLMAN3DIR => 'none',
     $pkg->get_makefile_vars,
