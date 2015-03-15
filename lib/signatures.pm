@@ -6,7 +6,7 @@ package signatures;
 use XSLoader;
 use B::Hooks::Parser 0.12;
 use B::Hooks::OP::Check 0.17;
-use B::Hooks::OP::PPAddr;
+use B::Hooks::OP::PPAddr 0.03;
 use B::Hooks::EndOfScope 0.08;
 
 XSLoader::load(
