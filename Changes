@@ -1,6 +1,7 @@
 Revision history for signatures
 
 {{$NEXT}}
+  - fix parsing of attribute handlers (GH #1)
 
 0.11      2015-01-03 20:35:48Z
   - re-release to fix problematic $VERSION declaration (RT#101095)
