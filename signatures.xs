@@ -208,7 +208,7 @@ handle_proto (pTHX_ OP *op, void *user_data) {
 					return op;
 				}
 
-				s += strlen (tmp2);
+				s = tmp;
 
 				if (strEQ (tmpbuf, "proto")) {
 					while (attr_start < tmp) {
