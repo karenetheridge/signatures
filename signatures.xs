@@ -343,3 +343,4 @@ teardown (class, id)
 			SvREFCNT_dec (ud->class);
 			Safefree (ud);
 		}
+# # vim: ts=4 sts=4 sw=4 noet :
