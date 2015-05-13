@@ -3,7 +3,7 @@ use warnings;
 package signatures;
 # ABSTRACT: Subroutine signatures with no source filter
 
-our $VERSION = '0.12';
+our $VERSION = '0.13';
 
 use XSLoader;
 use B::Hooks::Parser 0.12;
