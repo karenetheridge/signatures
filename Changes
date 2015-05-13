@@ -1,6 +1,6 @@
 Revision history for signatures
 
-{{$NEXT}}
+0.12      2015-05-13 01:23:05Z
   - fix parsing of attribute handlers (GH #1)
 
 0.11      2015-01-03 20:35:48Z
