@@ -8,7 +8,7 @@ signatures - Subroutine signatures with no source filter
 
 =head1 VERSION
 
-version 0.12
+version 0.13
 
 =head1 SYNOPSIS
 
@@ -119,13 +119,6 @@ improvement.
 
 Florian Ragwitz <rafl@debian.org>
 
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2008 by Florian Ragwitz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
-
 =head1 CONTRIBUTORS
 
 =for stopwords Karen Etheridge Peter Martini Alexandr Ciornii Father Chrysostomos Alex Kapranoff Steffen Schwigon
@@ -157,5 +150,12 @@ Alex Kapranoff <alex@kapranoff.ru>
 Steffen Schwigon <ss5@renormalist.net>
 
 =back
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2008 by Florian Ragwitz.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

@@ -1,6 +1,6 @@
 Revision history for signatures
 
-{{$NEXT}}
+0.13      2015-07-28 06:35:39Z
   - bump minimum version of B::Hooks::Parser for ::Install::Files
 
 0.12      2015-05-13 01:23:05Z
