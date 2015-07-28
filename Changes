@@ -1,6 +1,7 @@
 Revision history for signatures
 
 {{$NEXT}}
+  - bump minimum version of B::Hooks::Parser for ::Install::Files
 
 0.12      2015-05-13 01:23:05Z
   - fix parsing of attribute handlers (GH #1)
