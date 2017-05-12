@@ -18,5 +18,6 @@ WriteMakefile(
     VERSION_FROM => 'lib/signatures.pm',
     INSTALLMAN1DIR => 'none',
     INSTALLMAN3DIR => 'none',
+    NORECURS => 1,
     $pkg->get_makefile_vars,
 );
