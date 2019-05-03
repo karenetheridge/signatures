@@ -162,7 +162,7 @@ the returned value and the offset to C<inject>.
 
 =for Pod::Coverage setup setup_for teardown teardown_for
 
-=head1 BUGS
+=head1 LIMITATIONS
 
 =over 4
 
