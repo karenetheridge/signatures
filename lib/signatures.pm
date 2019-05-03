@@ -181,17 +181,13 @@ fine.
 
 =head1 SEE ALSO
 
-L<Method::Signatures>
-
-L<MooseX::Method::Signatures>
-
-L<Sub::Signatures>
-
-L<Attribute::Signature>
-
-L<Perl6::Subs>
-
-L<Perl6::Parameters>
+=for :list
+* L<Method::Signatures>
+* L<MooseX::Method::Signatures>
+* L<Sub::Signatures>
+* L<Attribute::Signature>
+* L<Perl6::Subs>
+* L<Perl6::Parameters>
 
 =head1 THANKS
 
