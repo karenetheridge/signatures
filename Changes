@@ -1,5 +1,7 @@
 Revision history for signatures
 
+{{$NEXT}}
+
 0.14      2019-05-03 05:39:41Z
   - properly clear PL_lex_stuff (perl RT#134058, Dave Mitchell)
 
