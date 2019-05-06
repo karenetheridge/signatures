@@ -9,8 +9,8 @@ perl:
   - blead-thr
   - dev         # latest point release
   - dev-thr
-  - "5.28-thr"
   - "5.28"
+  - "5.28-thr"
   - "5.26"
   - "5.26-thr"
   - "5.24"
@@ -32,6 +32,8 @@ perl:
   - "5.8"
   - "5.8-thr"
 matrix:
+  allow_failures:
+    - perl: "5.8-thr" # B::Hooks::OP::PPAddr may have issues here
   fast_finish: 1
 env:
   global:
